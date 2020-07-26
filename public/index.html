@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Affine</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<style>
+
+
+/* ---- Timeline ---- */
+/* General code */
+
+button {
+  width: 100px;
+  margin: auto;
+}
+.timeline {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.timeline .p {
+  font-size: 6px;
+
+}
+.timeline .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #a8d0f7;
+  margin: 0;
+  padding: 2px;
+  margin-left: -5px;
+  z-index: 2;
+  position: relative;
+}
+.timeline .circle:hover {
+  cursor: pointer;
+}
+.timeline .circle p {
+  text-align: center;
+  margin: auto;
+  line-height: 50px;
+  color: #ffffff;
+}
+.timeline .link {
+  z-index: 0;
+  background-color: #a8d0f7;
+  padding: 0;
+}
+.square {
+  max-width: 250px;
+  min-width: 100px;
+  height: 85px;
+  border-radius: 10px;
+  background-color: #d7d8da;
+  z-index: 2;
+  position: relative;
+  padding: 5px;
+  font-size: 8px;
+  text-align: center;
+}
+
+.square.blank {
+  visibility: hidden;
+}
+#end {
+  width: 0;
+  height: 0;
+}
+.square h3,
+.square h4 {
+  margin: 0px 0px 0px 15px;
+  text-align: left;
+  font-size: 16px;
+}
+.square h3 {
+  padding-top: 5px;
+}
+.square h4 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Linear timeline from left to right */
+#horizontal-timeline {
+  flex-direction: row;
+  min-width: 1100px;
+}
+.horizontal .link {
+  width: auto;
+  height: 5px;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+.horizontal .square {
+  margin: 30px 0 20px -30px;
+}
+.horizontal .square p {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.square.up::after {
+  margin: 12px 0px 0px 10px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(176, 179, 204);
+  padding: 5px;
+}
+
+.square.down::after {
+  margin: -108px 0 15px 15px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgb(176, 179, 204);
+}
+.horizontal #end {
+  margin: 175px 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #a8d0f7;
+}
+</style>
+
+
+
+
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="https://static.wixstatic.com/media/0b4e28_4713e32bd49c45b7b5bc2de5ce321e59~mv2.png/v1/fill/w_79,h_84,al_c,q_85,usm_0.66_1.00_0.01/Asset%201_0_5x.webp" alt="Myself"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- hero area -->
+<section class="hero-area bg-gray" id="parallax">
+  <div class="container">
+    <div class="row">
+      <h3  class="col-lg-10 mx-auto text-center text-white">Affine Global</h3>
+     <h2 class="text-white col-lg-10 mx-auto text-center ">DIGITAL ASSETS AS A SERVICE</h2>
+     <p class="text-white col-lg-10 mx-auto text-center">Our mission is to safely and securely connect our institutional and retail customers to a global platform of multi-asset exchanges</p>
+    </div>
+  </div>
+ 
+ 
+</section>
+<!-- /hero area -->
+
+<!-- about -->
+<section class="section bg-light ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center text-white">
+        <h2>Artificial Intelligence </h2>
+        <p class="font-secondary paragraph-lg text-dark">Deep Learning Frameworks /Advanced Conversational A.I./'Digital Assistants' 
+
+          Accelerated High Performance Computing​ / Neuromorphic Systems  ​/  ​​
+          
+          Edge A.I. Management of Fleets of Devices  ​/Integration with Blockchain Technologies in Distributed Blockchain Cloud Architecture</p>
+       
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+<!-- skills --
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+            <div class="wave" data-progress="90%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Web Design (90%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+            <div class="wave" data-progress="60%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Logo Design (60%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">After Effects (80%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Web App (70%)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /skills -->
+
+<!-- experience -->
+
+<!-- ./experience -->
+
+<!-- education -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Use Cases</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+           
+            <h4>Schools</h4>
+            <p class="mb-0 text-light">We have avatar that can help train people remotely </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+         
+            <h4>Health</h4>
+            <p class="mb-0 text-light">We have designed face Masks readily available to fight against COvid using High tech Engineering </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+           
+            <h4>Others</h4>
+            <p class="mb-0 text-light">We work in collaboration with Research organition and offer consultation service in High tech and Devops integration</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            
+            <h4>Enterprises</h4>
+            <p class="mb-0 text-light">work with internationals Enterprises and SME who are interested to improve their services with High tech</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+</section>
+<!-- /education -->
+
+<!-- services -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Services</h2>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow ">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Deep Learning Frameworks</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    
+      <br></br>
+    
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow ">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Advanced Conversational A.I</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow ">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Digital Assistants' Accelerated</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow ">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">High Performance Computing</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow ">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Neuromorphic Systems</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow ">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Distributed Blockchain </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+     
+
+
+    </div>
+  </div>
+</section>
+<!-- /services -->
+
+<!-- portfolio -->
+
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Our Experience</h2>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-1.png" alt="icon">
+       
+        <h4>Machine Learning</h4>
+       
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-2.png" alt="icon">
+      
+        <h4>High End Tech</h4>
+    
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-3.png" alt="icon">
+       
+        <h4>Cloud Computing</h4>
+      
+      </div>
+    </div>
+  </div>
+</section>
+<!--section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Our History</h2>
+      </div>
+
+
+
+
+      <h3> Affine's Journey </h3>
+      <div id="horizontal-timeline" class="timeline horizontal reverse">
+        <div class="block">
+          <div class="square up">
+            <h3>April 2016</h3>
+            <p>Project Launch with Global Partnership with IBM</p>
+          </div>
+          <div class="circle">
+            <p>2016</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down blank"></div>
+        </div>
+        <div class="block">
+          <div class="square up blank"></div>
+          <div class="circle activated">
+            <p>2016</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down">
+            <h3>8May 2016</h3>
+           
+            <p>1st International Enterprise</p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="square up">
+            <h3>August 2016</h3>
+        
+            <p>Proof of Concept with Israel.</p>
+          </div>
+          <div class="circle">
+            <p>2016</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down blank"></div>
+        </div>
+
+        <div class="block">
+          <div class="square up blank"></div>
+          <div class="circle">
+            <p>2016</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down">
+            <h3>October 2016</h3>
+           
+            <p>Proof of Concept with Banque du Liban</p>
+          </div>
+        </div>
+      
+        <div class="block">
+          <div class="square up">
+            <h3>November 2016</h3>
+        
+            <p>Test conducted with ALTX Group</p>
+          </div>
+          <div class="circle">
+            <p>2017</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down blank"></div>
+        </div>
+
+ <div class="block">
+          <div class="square up blank"></div>
+          <div class="circle">
+            <p>2016</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down">
+            <h3>Oct 2016</h3>
+           
+            <p>Prospectus for SDR</p>
+          </div>
+        </div>
+      
+        <div class="block">
+          <div class="square up">
+            <h3>November 2017</h3>
+        
+            <p>Joint venture with ALTX Group</p>
+          </div>
+          <div class="circle">
+            <p>2017</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down blank"></div>
+        </div>
+
+        <div class="block">
+          <div class="square up blank"></div>
+          <div class="circle">
+            <p>2017</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down">
+            <h3>Oct 2017</h3>
+           
+            <p>First Test AI</p>
+          </div>
+        </div>
+      
+        <div class="block">
+          <div class="square up">
+            <h3>November 2018</h3>
+        
+            <p>Fundraising</p>
+          </div>
+          <div class="circle">
+            <p>2018</p>
+          </div>
+          <div class="link"></div>
+          <div class="square down blank"></div>
+        </div>
+
+
+
+
+       
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--div class="row shuffle-wrapper">
+
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div-->
+  </div>
+</section>
+<!-- /portfolio -->
+
+
+
+<!-- client logo slider -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="client-logo-slider d-flex align-items-center">
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+    </div>
+  </div>
+</section>
+<!-- /client logo slider -->
+
+<!-- blog -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Our Recent Projects</h2>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/blog/post-3.jpg" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="#">AYuda</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="#" class="btn btn-xs btn-primary">Demo</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/blog/post-4.jpg" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="#">Face Mask</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="#" class="btn btn-xs btn-primary">Demo</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/blog/post-2.jpg" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="#">Respondant</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="#" class="btn btn-xs btn-primary">Demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog -->
+
+<!-- contact -->
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+<!-- testimonial -->
+<section class="section bg-primary position-relative testimonial-bg-shapes" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title text-white mb-5">Our Team</h2>
+      </div>
+      <div class="col-lg-10 mx-auto testimonial-slider">
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Peter has 35 years of experience in international finance, trading, and risk management  
+
+            from Lehman Brothers Kuhn and Loeb, JP Morgan Capital Markets Group, principal in a 
+            
+            global commodity trading conglomerate before founding his own firm to create new  
+            
+            products and markets in clean-tech.  Exec. MSc LSE IDEAS (hons), Exec. MBA (hons) 
+            
+            and early research experience at the Harvard Smithsonian Center for Astrophysics.  </p>
+        
+          <h4 class="text-white">PETER CLARKE</h4>
+          <h6 class="text-light mb-4">CEO, Founder</h6>
+        </div>
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Mike is a successful entrepreneur and financier, co-founder of Green wheels LLP, provider of vehicles and services to Uber. Tokenise.io is a digital asset company, Director of Kession Capital Ltd, an FCA firm and member of the Gibraltar Stock Exchange.</p>
+        
+          <h4 class="text-white">MIKE KESSLER </h4>
+          <h6 class="text-light mb-4">Advisor</h6>
+        </div>
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Val is Technology Lead at Deutsche Bank, with prior systems experience in collateral management, cross-platform integration, futures & options specialist, technical strategy, market risk, Java, J2EE, Agile, Scrum and C++.
+           </p>
+   
+          <h4 class="text-white">VAL DEMOTCHKINE</h4>
+          <h6 class="text-light mb-4">Consulting CTO</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg shapes -->
+  <img src="images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
+  <img src="images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1">
+
+  <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
+
+
+</section>
+<!-- /testimonial -->
+<!-- footer -->
+<footer class="bg-dark footer-section text-white" id="about">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h5 class="text-light"> Affine Global Corporation</h5>
+
+          <ul>
+           <li> Main offices:  </li>   
+           <li> 2232 Dell Range Blvd.</li> 
+           <li> Suite 245 3036 Cheyenne, WY 82009 United States</li> 
+           <li>+1(646) 583-0820 City Point One Ropemaker Street London. </li> 
+           <li>EC2Y 9HT United Kingdom +44 203 286 4170</li> 
+           <li>International House, 24 Holborn Viaduct , London  EC1A 2BN</li>
+          </ul>
+          <br></br>
+          <br></br>
+
+          
+        </div>
+
+
+
+
+
+
+
+
+        <div class="col-md-4">
+          <h5 class="text-light">About Affine</h5>
+          <li>Affine Global Corporation and its operations are a new way of doing business. This Delaware company and its legal and personal relationships we refer to as “Affine”. The ability to scale quickly through open source collaboration is the reason for the Company’s accomplishments from a simple idea to a global ‘production ready’ exchange in less than two years.</li>
+        <br></br>
+          <li>Our mission is to safely and securely connect our institutional and retail customers to a global platform of multi-asset exchanges, clearing and settlement companies and central depositories integrated with robust risk management to trade in digital assets representing securities or non-financial tokens used in loyalty programs, eSports and autonomous driving. We call our global platform HDXe</li>  
+
+          <br></br>
+          <br></br>
+
+        </div>
+        <br></br>
+        <div class="col-md-4">
+         
+
+          <h5 class="text-light">Accomplishments</h5>
+
+         <li> First in the world to test enterprise distributed ledger technology internationally (6 weeks after incorporation).</li> 
+<br></br>
+         <li> First in the world to develop and test proof of concepts of how to use blockchain technology with Central Banks and Exchanges.</li> 
+         <br></br>
+  
+          
+        <li>Advisor on Five Year Digital Innovation Plan for Blockchain as part of One Belt One Road Initiative.</li>  
+        <br></br>  
+         <li> IBM Global Entrepreneur (awarded twice).</li> 
+         <br></br>
+          <li>First to test artificial intelligence on a blockchain (China, UK, East Africa, Middle East, and USA)</li>
+
+   <br></br>
+   <br></br>
+
+        
+        </div>
+     
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "b88f4226-b422-4dc9-8fb7-4db0849d024a", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "8abf52bc-29a9-40b3-843c-b7397520e807", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
